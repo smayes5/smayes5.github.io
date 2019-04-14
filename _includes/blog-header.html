@@ -1,0 +1,19 @@
+<section class="banner style5 header content-align-center image-position-center onload-image-fade-in onload-content-fade-in invert">
+	<div class="content">
+		<h2>
+			{% if page.layout != "blog" %}
+				<a href="{{ "/blog" | relative_url }}">Navigating the Maze</a>
+			{% else %}
+				Navigating the Maze
+			{% endif %}
+		</h2>
+		<ul class="icons">
+			<li><a href="{{ "/" | relative_url }}" class="icon style2 fa-home"><span class="label">Home</span></a></li>
+			<li><a href="https://www.linkedin.com/in/smayes/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/smayes5" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+	</div>
+	<div class="image">
+		<img src="{{ "/assets/images/header.jpg" | relative_url }}" alt="" />
+	</div>
+</section>

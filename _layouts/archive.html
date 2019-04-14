@@ -1,0 +1,19 @@
+---
+layout: blog
+---
+
+<header>
+	<h2>Archive of posts from {{ content }}</h2>
+</header>
+
+<dl class="align-left">
+	{% for post in page.posts %}
+		<dt>
+			<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br />
+			{{ post.date | date: "%A, %B %-d, %Y" }}
+		</dt>
+		<dd>
+			{{ post.excerpt }}
+		</dd>
+	{% endfor %}
+</dl>

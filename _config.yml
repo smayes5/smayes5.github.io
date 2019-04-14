@@ -1,0 +1,46 @@
+# Site settings
+title: Steve Mayes
+description: >
+  Steve is an MCP, member of ACM, and a double graduate of Case Western Reserve University.
+  His passion is technology. His focus is architecting and developing cloud solutions.
+baseurl: ""
+url: "https://smayes.com"
+
+# Build settings
+plugins:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - github-pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+jekyll-archives:
+  enabled:
+    - year
+    - month
+  layouts:
+    year: yearly-archive
+    month: monthly-archive
+  permalinks:
+    year: "/blog/:year/"
+    month: "/blog/:year/:month/"
+markdown: kramdown
+paginate: 5
+paginate_path: "/blog/:num"
+sass:
+  style: compressed
+timezone: US/Eastern
+
+# Default YAML
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "blog/:year/:month/:slug"
+      layout: "post"

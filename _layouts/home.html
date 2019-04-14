@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section class="banner style5 content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-in invert">
+	<div class="content">
+		<h1>Hi. I'm Steve.</h1>
+		<h3>Developer, architect, consultant</h3>
+		<p>
+			My passion is technology.<br />
+			My focus is architecting and developing cloud solutions.
+		</p>
+		<ul class="actions">
+			<li><a href="#aboutme" class="button big wide smooth-scroll-middle">Learn More</a></li>
+		</ul>
+	</div>
+	<div class="image">
+		<img src="{{ "/assets/images/header.jpg" | relative_url }}" alt="" />
+	</div>
+</section>
+
+<section class="wrapper style1 align-center" id="aboutme">
+	<div class="inner">
+		<div class="align-left">
+			<p>I'm a <a href="https://www.microsoft.com/en-us/learning/microsoft-certified-professional.aspx">Microsoft Certified Professional</a>, a professional member of the <a href="https://acm.org">Association for Computing Machinery</a>, and a double graduate of <a href="https://case.edu">Case Western Reserve University</a>. I've had an interest in computers and technology since the early 1990s. It all started with <a href="https://en.wikipedia.org/wiki/QBasic">QBasic</a> and I haven't looked back since. I completed my master's thesis - <a href="https://rave.ohiolink.edu/etdc/view?acc_num=case1196443381">Advanced Interface for Querying Graph Data</a> - in January 2008. Since then, my professional career has spanned development, architecture, and management. My primary focus is on web-based technologies and public cloud solutions. I have over a decade of SharePoint development experience, with my more recent experience in Microsoft Azure, Office 365, and G Suite. Through my blog - <a href="{{ "/blog" | relative_url }}">Navigating the Maze</a> - I hope to give back to the community that has supported me.</p>
+		</div>
+		<ul class="icons">
+			<li><a href="https://www.linkedin.com/in/smayes/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/smayes5" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+	</div>
+</section>
+
+<section class="wrapper style1 align-center" id="posts">
+	<div class="inner">
+		<h2>Recent Posts from <a href="{{ "/blog" | relative_url }}">Navigating the Maze</a></h2>
+		<dl class="align-left">
+			{% for post in site.posts limit: 3 %}
+				<dt>
+					<a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><br />
+					{{ post.date | date: "%A, %B %-d, %Y" }}
+				</dt>
+				<dd>
+					{{ post.excerpt }}
+				</dd>
+			{% endfor %}
+		</dl>
+	</div>
+</section>
