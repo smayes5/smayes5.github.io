@@ -5,6 +5,7 @@ description: >
   His passion is technology. His focus is architecting and developing cloud solutions.
 baseurl: ""
 url: "https://smayes.com"
+excerpt_separator: <!--more-->
 
 # Build settings
 plugins:
@@ -14,6 +15,7 @@ plugins:
   - jekyll-paginate
   - github-pages
 exclude:
+  - __template
   - Gemfile
   - Gemfile.lock
   - LICENSE

@@ -1,11 +1,13 @@
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
-	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+	<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+	<noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | relative_url }}" /></noscript>
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | replace:'.html','' | absolute_url }}" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}" />
 </head>

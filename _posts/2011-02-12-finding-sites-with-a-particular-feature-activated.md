@@ -8,6 +8,8 @@ I continually have a question arise that seems easy to answer, yet from what I c
 
 > What are all of the sites with feature *xyz* enabled?
 
+<!--more-->
+
 A few years ago with a MOSS 2007 client environment where I had to answer this question, I was left with writing a quick C# console application that would crawl a web application for me and discover all of the site collections with a particular feature enabled. Not quite the best way of doing things, but it's what was the best at the time.
 
 Fast forward to SharePoint 2010. Now, PowerShell is in the mix and *required* for all SharePoint installations. **Thanks Microsoft!** So now, I have the vast capabilities of PowerShell available on any SharePoint farm I may encounter on any client environment with which I may be working. Plus, there's an added bonus that, for some reason, the word "script" seems to scare clients and IT departments less than "console applications". Even though PowerShell scripting can often wield the same powers as a C# console application, it seems to be accepted with more ease which makes my life easier.

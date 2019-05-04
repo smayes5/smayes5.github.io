@@ -12,6 +12,8 @@ Be sure to read this post first to get the foundation of how one can configure a
 
 I had a scenario recently where one of my clients needed a rather long running warm up script to execute upon the recycling of a particular application pool. Being a larger farm, there were several application pools and the client only desired the warm up script to run when one specific application pool was recycled. The Windows Task Scheduler allows tasks to be triggered for execution when specific events are logged. When an application pool is recycled (automatically or manually) or when IIS is reset, events are logged in the System event log. Those events can be used to trigger tasks to run a warm up script in the Windows Task Scheduler!
 
+<!--more-->
+
 <div class="styled-table">
 <table>
 <tr><th>IIS Action</th><th>Source</th><th>Event ID</th></tr>

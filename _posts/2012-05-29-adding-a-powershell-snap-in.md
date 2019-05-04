@@ -8,6 +8,8 @@ A typical scenario when developing PowerShell scripts for SharePoint is to need 
 
 Some scripts may assume that the script will be executed within the SharePoint 2010 Management Shell - which is simply a standard PowerShell window with some extras: including the SharePoint PowerShell snap-in. However, what if an unsuspecting or unexperienced administrator executes the SharePoint script in a standard PowerShell instance?
 
+<!--more-->
+
 To cover this circumstance, most script developers will choose to add the snap-in at the beginning of the script using the following code.
 
 <script src="https://gist.github.com/smayes5/6359618931e9cbc3b2c0.js?file=Add-PSSnapin-Basic.ps1"></script>

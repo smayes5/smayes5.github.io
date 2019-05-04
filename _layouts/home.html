@@ -10,8 +10,8 @@ layout: default
 			My passion is technology.<br />
 			My focus is architecting and developing cloud solutions.
 		</p>
-		<ul class="actions">
-			<li><a href="#aboutme" class="button big wide smooth-scroll-middle">Learn More</a></li>
+		<ul class="actions stacked">
+			<li><a href="#aboutme" class="button large wide smooth-scroll-middle">Learn More</a></li>
 		</ul>
 	</div>
 	<div class="image">
@@ -41,7 +41,11 @@ layout: default
 					{{ post.date | date: "%A, %B %-d, %Y" }}
 				</dt>
 				<dd>
-					{{ post.excerpt }}
+					{% if post.excerpt contains "<p>" %}
+						{{ post.excerpt }}
+					{% else %}
+						<p>{{ post.excerpt }}</p>
+					{% endif %}
 				</dd>
 			{% endfor %}
 		</dl>
