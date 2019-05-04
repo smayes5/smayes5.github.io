@@ -14,7 +14,7 @@
 				$y: null;
 
 				@if ($event == 'load') {
-					$x: 'body.is-loading &';
+					$x: 'body.is-preload &';
 					$y: _duration(on-load);
 				}
 				@else if ($event == 'scroll') {
@@ -148,7 +148,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			article {
 				width: (100% / 3);
 
@@ -158,7 +158,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			article {
 				width: 50%;
 
@@ -168,7 +168,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			article {
 				width: 100%;
 
@@ -190,7 +190,7 @@
 						}
 					}
 
-					@include breakpoint(large) {
+					@include breakpoint('<=large') {
 						article {
 							width: 25%;
 
@@ -200,7 +200,7 @@
 						}
 					}
 
-					@include breakpoint(medium) {
+					@include breakpoint('<=medium') {
 						article {
 							width: (100% / 3);
 
@@ -210,7 +210,7 @@
 						}
 					}
 
-					@include breakpoint(xsmall) {
+					@include breakpoint('<=xsmall') {
 						article {
 							width: 50%;
 
@@ -234,7 +234,7 @@
 						}
 					}
 
-					@include breakpoint(large) {
+					@include breakpoint('<=large') {
 						article {
 							width: 50%;
 
@@ -244,7 +244,7 @@
 						}
 					}
 
-					@include breakpoint(medium) {
+					@include breakpoint('<=medium') {
 						article {
 							width: 50%;
 
@@ -254,7 +254,7 @@
 						}
 					}
 
-					@include breakpoint(xsmall) {
+					@include breakpoint('<=xsmall') {
 						article {
 							width: 100%;
 
@@ -399,7 +399,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			article {
 				.caption {
 					padding: 2rem;
@@ -407,7 +407,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			article {
 				.caption {
 					padding: 2rem;
@@ -427,7 +427,7 @@
 						}
 					}
 
-					@include breakpoint(medium) {
+					@include breakpoint('<=medium') {
 						article {
 							.caption {
 								padding: 2rem;
@@ -435,7 +435,7 @@
 						}
 					}
 
-					@include breakpoint(small) {
+					@include breakpoint('<=small') {
 						article {
 							.caption {
 								padding: 2rem;
@@ -457,7 +457,7 @@
 						}
 					}
 
-					@include breakpoint(medium) {
+					@include breakpoint('<=medium') {
 						article {
 							.caption {
 								padding: 3rem;
@@ -465,7 +465,7 @@
 						}
 					}
 
-					@include breakpoint(small) {
+					@include breakpoint('<=small') {
 						article {
 							.caption {
 								padding: 2rem;
@@ -590,7 +590,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			.modal {
 				.inner {
 					img {

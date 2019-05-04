@@ -14,7 +14,7 @@
 				$y: null;
 
 				@if ($event == 'load') {
-					$x: 'body.is-loading &';
+					$x: 'body.is-preload &';
 					$y: _duration(on-load);
 				}
 				@else if ($event == 'scroll') {
@@ -266,25 +266,25 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			.content {
 				@include padding(_size(padding, xlarge), _size(padding, xlarge));
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			.content {
 				@include padding(_size(padding, large), _size(padding, large));
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			.content {
 				@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			.content {
 				@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			}
@@ -429,7 +429,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge) * 0.75, _size(padding, xlarge) * 0.75);
 
 			.content {
@@ -437,7 +437,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large) * 0.75);
 
 			.content {
@@ -445,7 +445,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium), _size(padding, medium));
 
 			.content {
@@ -453,7 +453,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small), _size(padding, small));
 
 			.content {
@@ -571,15 +571,15 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge));
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large));
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 
 			.image {
@@ -588,7 +588,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			@include vendor('align-items', 'flex-start');
 
@@ -629,7 +629,7 @@
 						margin: 0 0 _size(element-margin) (_size(element-margin) * 1.75);
 					}
 
-					@include breakpoint(small) {
+					@include breakpoint('<=small') {
 						.image {
 							margin: 0 0 _size(element-margin) (_size(element-margin) * 1);
 						}
@@ -709,15 +709,15 @@
 			margin-right: (_size(element-margin) * 1.75);
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge));
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large));
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 
 			.image {
@@ -725,7 +725,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			@include vendor('align-items', 'flex-start');
 
@@ -869,19 +869,19 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge));
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large));
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 		}
 
@@ -890,10 +890,6 @@
 			// Size.
 				&.fullscreen {
 					min-height: 100vh;
-				}
-
-				&.header {
-					padding: 3rem 3rem 1rem 3rem;
 				}
 
 			// Content Alignment.

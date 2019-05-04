@@ -14,7 +14,7 @@
 				$y: null;
 
 				@if ($event == 'load') {
-					$x: 'body.is-loading &';
+					$x: 'body.is-preload &';
 					$y: _duration(on-load);
 				}
 				@else if ($event == 'scroll') {
@@ -267,19 +267,19 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			.content {
 				@include padding(_size(padding, xlarge), _size(padding, xlarge));
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			.content {
 				@include padding(_size(padding, large), _size(padding, large));
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			.content {
 				@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 				width: 50%;
@@ -292,7 +292,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			.content {
 				@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			}
@@ -325,7 +325,7 @@
 				&.orient-right {
 					@include vendor('flex-direction', 'row-reverse');
 
-					@include breakpoint(small) {
+					@include breakpoint('<=small') {
 						@include orientation(portrait) {
 							@include vendor('flex-direction', 'column-reverse');
 						}
@@ -406,15 +406,15 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge));
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large));
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 
 			.image {
@@ -423,7 +423,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			@include vendor('align-items', 'flex-start');
 
@@ -459,7 +459,7 @@
 						margin: 0 0 _size(element-margin) (_size(element-margin) * 1.75);
 					}
 
-					@include breakpoint(small) {
+					@include breakpoint('<=small') {
 						.image {
 							margin: 0 0 _size(element-margin) (_size(element-margin) * 1);
 						}
@@ -539,15 +539,15 @@
 			margin-right: (_size(element-margin) * 1.75);
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge));
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large));
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium) * 1.25, _size(padding, medium));
 
 			.image {
@@ -555,7 +555,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small) * 1.25, _size(padding, small));
 			@include vendor('align-items', 'flex-start');
 
@@ -696,7 +696,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge) * 0.75);
 
 			.content {
@@ -704,7 +704,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large) * 0.75);
 
 			.content {
@@ -712,7 +712,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium), _size(padding, medium) * 0.75);
 
 			.content {
@@ -720,7 +720,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small), _size(padding, small) * 0.75);
 
 			.content {
@@ -728,7 +728,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			.content {
 				max-width: 80%;
 			}
@@ -852,7 +852,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			@include padding(_size(padding, xlarge), _size(padding, xlarge) * 0.75);
 
 			.content {
@@ -860,7 +860,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(_size(padding, large), _size(padding, large) * 0.75);
 
 			.content {
@@ -868,7 +868,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(_size(padding, medium), _size(padding, medium) * 0.75);
 
 			.content {
@@ -876,7 +876,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(_size(padding, small), _size(padding, small) * 0.75);
 
 			.content {
@@ -884,7 +884,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			.content {
 				max-width: 80%;
 			}

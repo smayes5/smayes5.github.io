@@ -28,7 +28,7 @@
 			border-top: 0;
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			> * {
 				> header {
 					width: 11rem;
@@ -36,7 +36,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			> * {
 				> header {
 					width: 10rem;
@@ -44,7 +44,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			> * {
 				@include vendor('flex-direction', 'column');
 

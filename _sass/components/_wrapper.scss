@@ -22,25 +22,25 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			> .inner {
 				@include padding(_size(padding, xlarge), _size(padding, xlarge) * 0.5);
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			> .inner {
 				@include padding(_size(padding, large), _size(padding, large));
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			> .inner {
 				@include padding(_size(padding, medium) * 1.5, _size(padding, medium));
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			> .inner {
 				@include padding(_size(padding, small) * 1.5, _size(padding, small));
 			}
@@ -72,7 +72,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			padding: _size(padding, xlarge);
 
 			> .inner {
@@ -80,7 +80,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			padding: _size(padding, large);
 
 			> .inner {
@@ -88,7 +88,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			padding: _size(padding, medium) * 0.75;
 
 			> .inner {
@@ -96,7 +96,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			padding: _size(padding, small) * 0.75;
 
 			> .inner {
