@@ -11,7 +11,11 @@ title: Navigating the Maze
 		<div class="inner">
 			<h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
 			<p>{{ post.date | date: "%A, %B %-d, %Y" }}</p>
-			{{ post.content }}
+			{% if post.excerpt contains "<p>" %}
+				{{ post.excerpt }}
+			{% else %}
+				<p>{{ post.excerpt }}</p>
+			{% endif %}
 		</div>
 	</section>
 {% endfor %}

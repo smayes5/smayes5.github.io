@@ -6,6 +6,8 @@ date:  2012-03-13 16:41:00 -0400
 
 I have a requirement for a [DelegateControl]("http://msdn.microsoft.com/en-us/library/microsoft.sharepoint.webcontrols.delegatecontrol.aspx") where I need the child candidate control to render a link that opens in a new window in certain instances of the DelegateControl and open the link in the same window otherwise. The design that made the most sense to me was to use the same code for the child control to compute and render the link in both circumstances and pass a boolean parameter, `OpenLinkInNewWindow`, to control the target of the link.
 
+<!--more-->
+
 The reader might be wondering why I need a control just to render a link. For the purposes of this article, just assume that the control has some built-in intelligence to render a link that cannot otherwise be easily generated!
 
 But how would I pass a parameter to the child control that the DelegateControl uses? Unfortunately, the DelegateControl itself does not have the ability to accept parameters. However, the [Control element](http://msdn.microsoft.com/en-us/library/ms469179.aspx) that defines child controls for a DelegateControl, within the elements.xml file for a feature, *does* have the ability to accept parameters. Perfect!

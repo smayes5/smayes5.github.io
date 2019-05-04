@@ -41,7 +41,11 @@ layout: default
 					{{ post.date | date: "%A, %B %-d, %Y" }}
 				</dt>
 				<dd>
-					{{ post.excerpt }}
+					{% if post.excerpt contains "<p>" %}
+						{{ post.excerpt }}
+					{% else %}
+						<p>{{ post.excerpt }}</p>
+					{% endif %}
 				</dd>
 			{% endfor %}
 		</dl>

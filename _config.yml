@@ -5,6 +5,7 @@ description: >
   His passion is technology. His focus is architecting and developing cloud solutions.
 baseurl: ""
 url: "https://smayes.com"
+excerpt_separator: <!--more-->
 
 # Build settings
 plugins:

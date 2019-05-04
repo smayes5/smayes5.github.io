@@ -6,6 +6,8 @@ date:  2011-08-03 12:58:00 -0400
 
 SharePoint has a wonderful check-in/check-out system for any library with minor versioning enabled. Users with the **Override Check Out** permission on a particular library have the powerful ability to discard or check in a document, page, etc. that is checked out to another user. This can typically be easily achieved via any of the library's views using the out-of-the-box user interface.
 
+<!--more-->
+
 ![Discard Check Out highlighted in an item's edit control block menu]({{ "/assets/images/2011-08-03-DiscardCheckOut1.jpg" | relative_url }})  
 Any user with the proper permissions can check in or discard the check out using the item's edit menu.
 

@@ -10,6 +10,8 @@ After configuring PowerShell remoting between my laptop and my development serve
 
 > It appears the new project installation was not successful. Click OK to see the error message
 
+<!--more-->
+
 After clicking OK, the error log is opened. If it does not open for you, my log was at `%HOMEPATH%\Documents\SharePoint Diagnostic Studio\Server Extensions\Error.log` In the error log, I saw the following message.
 
 > Logon failure: unknown user name or bad password.

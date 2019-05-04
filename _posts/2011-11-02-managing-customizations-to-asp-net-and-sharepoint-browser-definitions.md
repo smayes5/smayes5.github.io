@@ -1,7 +1,8 @@
 ---
-title: 'Managing Customizations to ASP.NET & SharePoint Browser Definitions'
-slug:  'managing-customizations-to-asp-net-and-sharepoint-browser-definitions'
-date:  2011-11-02 14:17:00 -0500
+title:   'Managing Customizations to ASP.NET & SharePoint Browser Definitions'
+slug:    'managing-customizations-to-asp-net-and-sharepoint-browser-definitions'
+date:    2011-11-02 14:17:00 -0500
+excerpt: This post suggests best practices for managing customizations made to ASP.NET and SharePoint browser definition files.
 ---
 
 *This article's purpose is to discuss the best practices around managing customizations to ASP.NET's Browser Definitions. For more details around ASP.NET's browser definition platform, please see the [Browser Definition File Schema (browsers element)](http://msdn.microsoft.com/en-us/library/ms228122.aspx) article on MSDN. A quick overview of ASP.NET Browser Definitions can be found in the box below.*

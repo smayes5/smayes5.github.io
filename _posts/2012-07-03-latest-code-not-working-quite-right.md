@@ -1,7 +1,8 @@
 ---
-title: 'Latest Code Not Working Quite Right?'
-slug:  'latest-code-not-working-quite-right'
-date:  2012-07-03 09:29:00 -0400
+title:   'Latest Code Not Working Quite Right?'
+slug:    'latest-code-not-working-quite-right'
+date:    2012-07-03 09:29:00 -0400
+excerpt: This post reviews a common situation in SharePoint development where stale code persists in a .NET process causing unexpected results.
 ---
 
 I'm going to start this post with an example. See if you have ever found yourself in this situation when working on developing updates for previously deployed code; most often in a test and/or development environment:

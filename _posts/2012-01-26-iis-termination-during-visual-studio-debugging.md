@@ -8,6 +8,8 @@ What a familiar situation: You are debugging a SharePoint solution (or any ASP.N
 
 > The web server process that was being debugged has been terminated by Internet Information Services (IIS). This can be avoided by configuring Application Pool ping settings in IIS. See help for further details.
 
+<!--more-->
+
 ![IIS Terminated Process Error Message from Visual Studio]({{ "/assets/images/2012-01-26-TerminatedProcess.jpg" | relative_url }})
 
 It typically occurs within two minutes of Visual Studio pausing on a breakpoint. It is possible to extend this timeframe and the error message gives the answer. The reason Visual Studio presents this message is because IIS is forcefully terminating the worker process being debugged. Why? Because IIS (by default) performs health monitoring pings against each of its worker processes to ensure they are still responding. If IIS does not receive a response from the worker process to one of these pings within a given timeframe, IIS forcefully terminates the worker process. When debugging in Visual Studio, the worker process is stopped while Visual Studio is paused on a breakpoint. Therefore, the worker process has no way to respond to a health monitoring ping. Therefore, the worker process gets terminated.
