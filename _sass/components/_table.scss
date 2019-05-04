@@ -16,7 +16,7 @@
 		}
 	}
 
-	table {
+	.styled-table table {
 		margin: 0 0 _size(element-margin) 0;
 		width: 100%;
 
@@ -85,7 +85,7 @@
 	}
 
 	@mixin color-table($p: null) {
-		table {
+		.styled-table table {
 			tbody {
 				tr {
 					border-color: _palette($p, border);
