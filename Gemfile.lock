@@ -247,7 +247,7 @@ DEPENDENCIES
   github-pages
   jekyll (= 3.8.5)
   jekyll-archives
-  jekyll-feed (~> 0.6)
+  jekyll-feed
   jekyll-gist
   jekyll-paginate
   tzinfo-data
