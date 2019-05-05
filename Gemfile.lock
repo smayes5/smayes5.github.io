@@ -250,7 +250,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-paginate
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.5.5p157
