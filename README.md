@@ -16,5 +16,6 @@ I'm currently using Ubuntu on Windows 10 to test my site locally before merging 
 
 ```bash
 cd /mnt/c/Code/smayes5.github.io/
+bundle install # Only if using new gems or different versions of existing gems
 bundle exec jekyll serve --no-watch
 ```
